@@ -23,7 +23,7 @@ int main() {
     strcpy(palabraAdivinar, palabras[indice]);	//copiamos el contenido de la palabra en una nueva variable dependiendo de la palabra elegida
 
 
-    for (i = 0; i < strlen(palabraAdivinar); i++) { //creamos lo guiones bajos dependiendo del tamaño de la palabra
+    for (i = 0; i < strlen(palabraAdivinar); i++) { //creamos lo guiones bajos dependiendo del tamaÃ±o de la palabra
         palabraGuiones[i] = '-';
     }
     palabraGuiones[i] = '\0'; //aumentamos lo guiones hasta el final de la cadena
@@ -33,7 +33,7 @@ int main() {
         printf("Introduce una letra: \n\n");
         scanf(" %c", &letra);
         int encontrado = 0;
-        for (i = 0; i < strlen(palabraAdivinar); i++) { //dependiendo del tamaño de la palabra y si la palabra que fue insertda es igual a la letra 
+        for (i = 0; i < strlen(palabraAdivinar); i++) { //dependiendo del tamaÃ±o de la palabra y si la palabra que fue insertda es igual a la letra 
             if (palabraAdivinar[i] == letra) {			//de la palabra, los guiones van a ser iguales a las entras restantes y se va a aumentar
                 palabraGuiones[i] = letra;				//el valor de los encontrados
                 encontrado = 1;
@@ -52,7 +52,7 @@ int main() {
     }
 
     if (acertado==1) { //si el acerdado es 1 se imprime lo siguiente
-        printf("Felicidades, has ganado deseoooo que te haya entrenido este pequeño juegoo \n\n");
+        printf("Felicidades, has ganado deseoooo que te haya entrenido este pequeÃ±o juegoo \n\n");
         printf("Gracias por ser mi noviaaa te amooo ! \n\n");
     } else {
         printf("Lo siento, has perdido! me rompes mi corazonnn \n");
